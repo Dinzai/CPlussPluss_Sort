@@ -1,5 +1,10 @@
 #include "Sort.h"
 
+int Search::GetLength(int arr[])
+{
+    int length = sizeof(arr); // sizeof(arr[0]);
+    return length;
+}
 
 void Search::LoopLinear(int arr[], int length)
 {
@@ -23,6 +28,21 @@ int* Search::LoopRecursive(int arr[], int length, int count)
         
     }
     return LoopRecursive(arr, length, count + 1);
+
+
+}
+
+void Sort::Swap(int arr[], int a, int b)
+{
+    int temp = arr[a];
+    arr[a] = arr[b];
+    arr[b] = temp; 
+}
+
+int* Sort::BubbleSort(int arr[], int start)
+{
+    //find base case
+    //if(arr)
 
 
 }

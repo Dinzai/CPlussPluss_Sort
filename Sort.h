@@ -8,26 +8,24 @@
 
 struct Search   
 {   
-    Search()
-    {
 
-    }
 
+    int GetLength(int arr[]);
     void LoopLinear(int arr[], int length);
-    int* LoopRecursive(int arr[], int length, int count); //helper method for searching through an array
+    int* LoopRecursive(int arr[], int length, int count);       //helper method for searching through an array
 };
 
 //All methods should implment recursion, no while or for loops
 
 struct Sort
 {
-    void Swap();//helper method for moving array chunks
+    void Swap(int arr[], int a, int b);                         //helper method for moving array chunks
    
-    int* BubbleSort();
+    int* BubbleSort(int arr[], int start);
 
-    int* SelectionSort();
+    int* SelectionSort(int arr[], int start);
 
-    int* InsertionSort();
+    int* InsertionSort(int arr[], int start);
 
     int* MergeSort();
 
